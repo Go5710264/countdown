@@ -2,17 +2,17 @@ let timer = document.getElementById('timer');
 
 
 //Решение
-// timer.textContent = 59;
-// let timerId = setInterval(timeReduction, 500);
+timer.textContent = 59;
+let timerId = setInterval(timeReduction, 500);
 
-// function timeReduction() {
-//     if(timer.textContent > 0) {
-//         return timer.textContent -= 1;
-//     } else {
-//         clearInterval(timerId);
-//         return alert('Вы победили в конкурсе!');
-//     };
-// }
+function timeReduction() {
+    if(timer.textContent > 0) {
+        return timer.textContent -= 1;
+    } else {
+        clearInterval(timerId);
+        return alert('Вы победили в конкурсе!');
+    };
+}
 
 
 //Выводит дату в нужном формате, но не работает
